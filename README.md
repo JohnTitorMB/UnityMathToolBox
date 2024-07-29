@@ -1,6 +1,6 @@
 # UnityMathToolBox
 
-This Project contan some physics and mathematique tools for any project like physique engine, game engine and other.
+This Project contain some physics and mathematics tools for any project like physics engine, game engine and other.
 
 Intersection collision : 
 - Point/Point
