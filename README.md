@@ -4,8 +4,20 @@ This c# mathematical utility compiles a diverse and varied set of mathematical a
 
 # Intersection between Line and various shapes
 
-**Table of Contents**
-[Line - Point](https://github.com/JohnTitorMB/UnityMathToolBox/blob/main/README.md "Line - Point")
+## Table of Contents
+- [Line - Point](https://github.com/JohnTitorMB/UnityMathToolBox/blob/main/README.md "Line - Point")
+- [Line - Line](https://github.com/JohnTitorMB/UnityMathToolBox/blob/main/README.md "Line - Line")
+- [Line - Plan](https://github.com/JohnTitorMB/UnityMathToolBox/blob/main/README.md "Line - Plan")
+- [Line - PlanXZ](https://github.com/JohnTitorMB/UnityMathToolBox/blob/main/README.md "Line - PlanXZ")
+- [Line - PlanXY](https://github.com/JohnTitorMB/UnityMathToolBox/blob/main/README.md "Line - PlanXY")
+- [Line - PlanYZ](https://github.com/JohnTitorMB/UnityMathToolBox/blob/main/README.md "Line - PlanYZ")
+- [Line - Quad](https://github.com/JohnTitorMB/UnityMathToolBox/blob/main/README.md "Line - Quad")
+- [Line - Sphere](https://github.com/JohnTitorMB/UnityMathToolBox/blob/main/README.md "Line - Sphere")
+- [Line - Sphere Center on zero](https://github.com/JohnTitorMB/UnityMathToolBox/blob/main/README.md "Line - Sphere Center on zero")
+- [Line - Infinite Cylinder](https://github.com/JohnTitorMB/UnityMathToolBox/blob/main/README.md "Line - Infinite Cylinder")
+- [Line - Cylinder](https://github.com/JohnTitorMB/UnityMathToolBox/blob/main/README.md "Line - Cylinder")
+- [Line - Capsule](https://github.com/JohnTitorMB/UnityMathToolBox/blob/main/README.md "Line - Capsule")
+- [Line - Minkowski Box Sphere](https://github.com/JohnTitorMB/UnityMathToolBox/blob/main/README.md "Line - Minkowski Box Sphere")
 
 ## Line - Point
 
