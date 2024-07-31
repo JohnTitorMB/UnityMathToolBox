@@ -231,15 +231,15 @@ This c# mathematical utility compiles a diverse and varied set of mathematical a
 
 # Parametric Intersection between Line and various shapes
 
-- [Line - Plan](https://github.com/JohnTitorMB/UnityMathToolBox/blob/main/README.md "Line - Plan (P)")
-- [Line - PlanXZ](https://github.com/JohnTitorMB/UnityMathToolBox/blob/main/README.md "Line - PlanXZ (P)")
-- [Line - Quad](https://github.com/JohnTitorMB/UnityMathToolBox/blob/main/README.md "Line - Quad (P)")
-- [Line - CircularPlan](https://github.com/JohnTitorMB/UnityMathToolBox/blob/main/README.md "Line - CircularPlan (P)")
-- [Line - Sphere](https://github.com/JohnTitorMB/UnityMathToolBox/blob/main/README.md "Line - Sphere (P)")
-- [Line - Cylinder without caps](https://github.com/JohnTitorMB/UnityMathToolBox/blob/main/README.md "Line - Cylinder without caps (P)")
-- [Line - Sphere Up Caps](https://github.com/JohnTitorMB/UnityMathToolBox/blob/main/README.md "Line - Sphere Up Caps (P)")
-- [Line - Capsule](https://github.com/JohnTitorMB/UnityMathToolBox/blob/main/README.md "Line - Capsule (P)")
-- [Line - Minkowski Box Sphere](https://github.com/JohnTitorMB/UnityMathToolBox/blob/main/README.md "Line - Minkowski Box Sphere (P)")
+- [Line - Plan](#Line---Plan (P))
+- [Line - PlanXZ](#Line---PlanXZ (P))
+- [Line - Quad](#Line---Quad-(P))
+- [Line - CircularPlan](#Line---CircularPlan-(P))
+- [Line - Sphere](#Line---Sphere-(P))
+- [Line - Cylinder without caps](#Line---Cylinder-without-caps-(P))
+- [Line - Sphere Up Caps](#Line---Sphere-Up-Caps-(P))
+- [Line - Capsule](#Line---Capsule-(P))
+- [Line - Minkowski Box Sphere](#Line---Minkowski-Box-Sphere-(P))
 
 
 ## Line - Plan (P)
