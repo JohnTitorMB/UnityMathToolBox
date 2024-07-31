@@ -4,9 +4,9 @@ This c# mathematical utility compiles a diverse and varied set of mathematical a
 
 # Intersection between Line and various shapes
 
-- [Line - Point](https://github.com/JohnTitorMB/UnityMathToolBox/blob/main/README.md "Line - Point")
-- [Line - Line](https://github.com/JohnTitorMB/UnityMathToolBox/blob/main/README.md "Line - Line")
-- [Line - Plan](https://github.com/JohnTitorMB/UnityMathToolBox/blob/main/README.md "Line - Plan")
+- [Line - Point]("#Line---Point")
+- [Line - Line]("#Line---Line")
+- [Line - Plan]("#Line---Plan")
 - [Line - PlanXZ](https://github.com/JohnTitorMB/UnityMathToolBox/blob/main/README.md "Line - PlanXZ")
 - [Line - PlanXY](https://github.com/JohnTitorMB/UnityMathToolBox/blob/main/README.md "Line - PlanXY")
 - [Line - PlanYZ](https://github.com/JohnTitorMB/UnityMathToolBox/blob/main/README.md "Line - PlanYZ")
