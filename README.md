@@ -388,3 +388,68 @@ This c# mathematical utility compiles a diverse and varied set of mathematical a
         Debug.Log("t1 : " + t1);
     }
 ```
+
+# Math Utility
+
+## BaseChangement
+
+Transforms a local point relative to a base A into a base B
+
+### Definition :
+```c#
+    public static Vector3 BaseChangement(Vector3 _point, Matrix4x4 baseA, Matrix4x4 baseB)
+```
+
+### Example : 
+```c#
+    Matrix4x4 baseA = Matrix.TRS(new Vector3(10,0,0), Quaternion.identity, new Vector3(1,1,1));
+    Matrix4x4 baseB = Matrix.TRS(new Vector3(0,10,0), Quaternion.Euler(0,0,90), new Vector3(1,1,1));
+    Vector3 result = MathUtility.BaseChangement(new Vector3(-3,0,0), baseA, baseB);
+    Debug.Log("result : " + result);
+```
+
+## BaseChangement (Optimised version)
+
+Transforms a local point relative to a base A into a base B
+
+### Definition :
+```c#
+    public static Vector3 BaseChangementOptimised(Vector3 _point, Vector3 _baseATranslation, Quaternion _baseARotation, Vector3 baseAScale
+                                                    , Vector3 _baseBTranslation, Quaternion _baseBRotation, Vector3 baseBScale)
+```
+
+### Example : 
+```c#
+    Vector3 result = MathUtility.BaseChangementOptimised(new Vector3(-3,0,0), new Vector3(10,0,0), Quaternion.identity, new Vector3(1,1,1), new Vector3(0,10,0), Quaternion.Euler(0,0,90), new Vector3(1,1,1));
+    Debug.Log("result : " + result);
+```
+
+## WorldBaseChangementOptimised
+Transforms a world point into a base B
+
+
+### Definition :
+```c#
+    public static Vector3 WorldBaseChangementOptimised(Vector3 _point, Vector3 _targetBaseTranslation, Quaternion _targetBaseRotation, Vector3 _targetBaseScale)
+```
+
+### Example : 
+```c#
+    Vector3 result = MathUtility.WorldBaseChangementOptimised(new Vector3(-3,0,0), new Vector3(0,10,0), Quaternion.Euler(0,0,90), new Vector3(1,1,1));
+    Debug.Log("result : " + result);
+```
+
+## BaseToWorld
+Transforms a local point into world point
+
+
+### Definition :
+```c#
+    public static Vector3 BaseToWorld(Vector3 _point, Vector3 _baseTranslation, Quaternion _baseRotation, Vector3 _baseScale)
+```
+
+### Example : 
+```c#
+    Vector3 result = MathUtility.BaseToWorld(new Vector3(-3,0,0), new Vector3(0,10,0), Quaternion.Euler(0,0,90), new Vector3(1,1,1));
+    Debug.Log("result : " + result);
+```
