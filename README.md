@@ -5,7 +5,7 @@ This c# mathematical utility compiles a diverse and varied set of mathematical a
 # Intersection between Line and various shapes
 
 **Table of Contents**
-[Line - Point](https://github.com/JohnTitorMB/UnityMathToolBox/edit/main/README.md "Line - Point")
+[Line - Point](https://github.com/JohnTitorMB/UnityMathToolBox/blob/main/README.md "Line - Point")
 
 ## Line - Point
 
