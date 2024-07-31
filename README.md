@@ -252,7 +252,7 @@ This c# mathematical utility compiles a diverse and varied set of mathematical a
 ### Example : 
 ```c#
     float t = 0.0f;
-    if(CollisionUtilily.CheckLinePlanIntersection(new Vector3(0,6,0), new Vector3(0,-2,0), new Vector3(0,-1,0), new Vector3(0,1,0), ref t))
+    if(ParametricCollisionUtility.CheckLinePlanIntersection(new Vector3(0,6,0), new Vector3(0,-2,0), new Vector3(0,-1,0), new Vector3(0,1,0), ref t))
         Debug.Log("t : " + t);
 ```
 
@@ -266,7 +266,7 @@ This c# mathematical utility compiles a diverse and varied set of mathematical a
 ### Example : 
 ```c#
     float t = 0.0f;
-    if(CollisionUtilily.CheckLinePlanXZIntersection(new Vector3(0,6,0), new Vector3(0,-2,0), ref t))
+    if(ParametricCollisionUtility.CheckLinePlanXZIntersection(new Vector3(0,6,0), new Vector3(0,-2,0), ref t))
         Debug.Log("t : " + t);
 ```
 
@@ -280,7 +280,7 @@ This c# mathematical utility compiles a diverse and varied set of mathematical a
 ### Example : 
 ```c#
     float t = 0.0f;
-    if(CollisionUtilily.CheckLineQuadIntersection(new Vector3(0,-6,0), new Vector3(0,5,0), new Vector3(-0.5f, 0, -0.5f), new Vector3(0.5f, 0, -0.5f), new Vector3(-0.5f,0,0.5f), ref t))
+    if(ParametricCollisionUtility.CheckLineQuadIntersection(new Vector3(0,-6,0), new Vector3(0,5,0), new Vector3(-0.5f, 0, -0.5f), new Vector3(0.5f, 0, -0.5f), new Vector3(-0.5f,0,0.5f), ref t))
         Debug.Log("t : " + t);
 ```
 
@@ -294,7 +294,7 @@ This c# mathematical utility compiles a diverse and varied set of mathematical a
 ### Example : 
 ```c#
     float t = 0.0f;
-    if(CollisionUtilily.CheckLineCircleIntersection(new Vector3(0,-6,0), new Vector3(0,5,0), new Vector3(0.0f, 2.0f, 0.0f), new Vector3(0, 1, 0), ref t))
+    if(ParametricCollisionUtility.CheckLineCircleIntersection(new Vector3(0,-6,0), new Vector3(0,5,0), new Vector3(0.0f, 2.0f, 0.0f), new Vector3(0, 1, 0), ref t))
         Debug.Log("t : " + t);
 ```
 
@@ -309,7 +309,7 @@ This c# mathematical utility compiles a diverse and varied set of mathematical a
 ```c#
     float t0 = 0.0f;
     float t1 = 0.0f;
-    if(CollisionUtilily.CheckLineSphereIntersection(new Vector3(0,-6,0), new Vector3(0,5,0), new Vector3(0.0f, 2.0f, 0.0f), 0.5f, ref t0, ref t1))
+    if(ParametricCollisionUtility.CheckLineSphereIntersection(new Vector3(0,-6,0), new Vector3(0,5,0), new Vector3(0.0f, 2.0f, 0.0f), 0.5f, ref t0, ref t1))
     {
         Debug.Log("t0 : " + t0);
         Debug.Log("t1 : " + t1);
@@ -327,7 +327,7 @@ This c# mathematical utility compiles a diverse and varied set of mathematical a
 ```c#
     float t0 = 0.0f;
     float t1 = 0.0f;
-    if(CollisionUtilily.CheckLineCylinderWihtoutCapsIntersection(new Vector3(-6,0,0), new Vector3(5,0,0), new Vector3(0,0,0), new Vector3(0,1,0), 0.5f, 2.0f, ref t0, ref t1))
+    if(ParametricCollisionUtility.CheckLineCylinderWihtoutCapsIntersection(new Vector3(-6,0,0), new Vector3(5,0,0), new Vector3(0,0,0), new Vector3(0,1,0), 0.5f, 2.0f, ref t0, ref t1))
     {
         Debug.Log("t0 : " + t0);
         Debug.Log("t1 : " + t1);
@@ -345,7 +345,7 @@ This c# mathematical utility compiles a diverse and varied set of mathematical a
 ```c#
     float t0 = 0.0f;
     float t1 = 0.0f;
-    if(CollisionUtilily.CheckLineSphereCapsIntersection(new Vector3(-3,0,0), new Vector3(5,0,0), new Vector3(0,-0.2,0), new Vector3(0,1,0), 0.5f, ref t0, ref t1))
+    if(ParametricCollisionUtility.CheckLineSphereCapsIntersection(new Vector3(-3,0,0), new Vector3(5,0,0), new Vector3(0,-0.2,0), new Vector3(0,1,0), 0.5f, ref t0, ref t1))
     {
         Debug.Log("t0 : " + t0);
         Debug.Log("t1 : " + t1);
@@ -363,7 +363,7 @@ This c# mathematical utility compiles a diverse and varied set of mathematical a
 ```c#
     float t0 = 0.0f;
     float t1 = 0.0f;
-    if(CollisionUtilily.CheckLineCapsuleIntersection(new Vector3(-3,0,0), new Vector3(5,0,0), new Vector3(0,0,0), new Vector3(0,1,0), 0.5f, 2.0f, ref t0, ref t1))
+    if(ParametricCollisionUtility.CheckLineCapsuleIntersection(new Vector3(-3,0,0), new Vector3(5,0,0), new Vector3(0,0,0), new Vector3(0,1,0), 0.5f, 2.0f, ref t0, ref t1))
     {
         Debug.Log("t0 : " + t0);
         Debug.Log("t1 : " + t1);
@@ -382,7 +382,7 @@ This c# mathematical utility compiles a diverse and varied set of mathematical a
 ```c#
     float t0 = 0.0f;
     float t1 = 0.0f;
-    if(CollisionUtilily.CheckLineMinkowskiBoxSphereIntersection(new Vector3(-3,0,0), new Vector3(5,0,0), new Vector3(0,0,0), Quaternion.identity, 0.2f, ref t0, ref t1))
+    if(ParametricCollisionUtility.CheckLineMinkowskiBoxSphereIntersection(new Vector3(-3,0,0), new Vector3(5,0,0), new Vector3(0,0,0), Quaternion.identity, 0.2f, ref t0, ref t1))
     {
         Debug.Log("t0 : " + t0);
         Debug.Log("t1 : " + t1);
