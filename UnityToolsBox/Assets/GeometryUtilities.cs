@@ -85,19 +85,19 @@ public class GeometryUtilities : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
         
         Vector3 T1_Result = Vector3.zero;
-        if (CollisionUtilily.CheckPointPointIntersection(T1_pointA.position, T1_pointB.position, T1_threshold, ref T1_Result))
+        if (CollisionUtilily.CheckPointPointIntersection(T1_pointA.position, T1_pointB.position, T1_threshold))
         {
             T1_resultPoint.gameObject.SetActive(true);
-            T1_resultPoint.position = T1_Result;
         }
         else
             T1_resultPoint.gameObject.SetActive(false);
 
         Vector3 T2_Result = Vector3.zero;
 
-        if (CollisionUtilily.CheckPointLineIntersection(T2_point.position, T2_linePointA.position, T2_linePointB.position, T2_threshold, ref T2_Result))
+        if (CollisionUtilily.CheckLinePointIntersection(T2_linePointA.position, T2_linePointB.position, T2_point.position, T2_threshold, ref T2_Result))
         {
             T2_resultPoint.gameObject.SetActive(true);
             T2_resultPoint.position = T2_Result;
@@ -111,7 +111,7 @@ public class GeometryUtilities : MonoBehaviour
 
         Vector3 T3_Result = Vector3.zero;
         Vector3 T3_Result2 = Vector3.zero;
-        if (CollisionUtilily.CheckLineLineIntersection(T3_lineAPointA.position, T3_lineAPointB.position, T3_lineBPointA.position, T3_lineBPointB.position, ref T3_Result, ref T3_Result2, T3_threshold))
+        if (CollisionUtilily.CheckLineLineIntersection(T3_lineAPointA.position, T3_lineAPointB.position, T3_lineBPointA.position, T3_lineBPointB.position, T3_threshold, ref T3_Result, ref T3_Result2))
         {
             Debug.DrawLine(T3_lineAPointA.position, T3_lineAPointB.position, Color.green);
             Debug.DrawLine(T3_lineBPointA.position, T3_lineBPointB.position, Color.green);
@@ -214,7 +214,7 @@ public class GeometryUtilities : MonoBehaviour
         Vector3 T7_Result = Vector3.zero;
         Vector3 T7_Result2 = Vector3.zero;
 
-        resultCount = CollisionUtilily.CheckIntersectionLineInfiniteCylindreMethod1(T7_linePointA.position, T7_linePointB.position, T7_infiniteCylinder.position, T7_infiniteCylinder.up, T7_infiniteCylinder.localScale.x / 2.0f, ref T7_Result, ref T7_Result2);
+        resultCount = CollisionUtilily.CheckLineInfiniteCylinderIntersection(T7_linePointA.position, T7_linePointB.position, T7_infiniteCylinder.position, T7_infiniteCylinder.up, T7_infiniteCylinder.localScale.x / 2.0f, ref T7_Result, ref T7_Result2);
         if (resultCount > 0)
         {
             T7_resultPoint.transform.position = T7_Result;
@@ -246,7 +246,7 @@ public class GeometryUtilities : MonoBehaviour
         Vector3 T8_Result = Vector3.zero;
         Vector3 T8_Result2 = Vector3.zero;
 
-        resultCount = CollisionUtilily.CheckIntersectionLineCylindreMethod1(T8_linePointA.position, T8_linePointB.position, T8_cylinder.position, T8_cylinder.up, T8_cylinder.localScale.x / 2.0f, T8_cylinder.localScale.y * 2.0f, ref T8_Result, ref T8_Result2);
+        resultCount = CollisionUtilily.CheckLineCylinderIntersection(T8_linePointA.position, T8_linePointB.position, T8_cylinder.position, T8_cylinder.up, T8_cylinder.localScale.x / 2.0f, T8_cylinder.localScale.y * 2.0f, ref T8_Result, ref T8_Result2);
         if (resultCount > 0)
         {
             T8_resultPoint.transform.position = T8_Result;
@@ -278,7 +278,7 @@ public class GeometryUtilities : MonoBehaviour
         Vector3 T9_Result = Vector3.zero;
         Vector3 T9_Result2 = Vector3.zero;
 
-        resultCount = CollisionUtilily.CheckIntersectionLineCapsule(T9_linePointA.position, T9_linePointB.position, T9_capsule.position, T9_capsule.up, T9_capsule.localScale.x / 2.0f, T9_capsule.localScale.y * 2.0f - T9_capsule.localScale.x, ref T9_Result, ref T9_Result2);
+        resultCount = CollisionUtilily.CheckLineCapsuleIntersection(T9_linePointA.position, T9_linePointB.position, T9_capsule.position, T9_capsule.up, T9_capsule.localScale.x / 2.0f, T9_capsule.localScale.y * 2.0f - T9_capsule.localScale.x, ref T9_Result, ref T9_Result2);
         if (resultCount > 0)
         {
             T9_resultPoint.transform.position = T9_Result;
