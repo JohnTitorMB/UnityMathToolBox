@@ -36,6 +36,13 @@ public class MathUtility
         return newPoint;
     }
 
+    public static Vector3 WorldBaseChangementDirection(Vector3 _direction, Quaternion _targetBaseRotation)
+    {
+        Vector3 newDirection = Quaternion.Inverse(_targetBaseRotation) * _direction;
+
+        return newDirection;
+    }
+
     public static Vector3 BaseToWorld(Vector3 _point, Vector3 _baseTranslation, Quaternion _baseRotation, Vector3 _baseScale)
     {
         Vector3 _pointScale = _point;
