@@ -957,8 +957,6 @@ public class CollisionUtilily
             t1 = t3;
 
             count = 2;
-
-            return 2;
         }
         else if(result1 == true || result2 == true)
         {
@@ -1454,8 +1452,6 @@ public class CollisionUtilily
             t1 = t3;
 
             count = 2;
-
-            return 2;
         }
         else if (result1 == true || result2 == true)
         {
