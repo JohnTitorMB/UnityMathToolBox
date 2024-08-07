@@ -2,7 +2,11 @@
 
 This c# mathematical utility compiles a diverse and varied set of mathematical and physical functions to simplify 3D project development.
 
-# Intersection between Segment and various shapes
+# Intersection :
+- [Segment Intersection](#segment-Intersection)
+
+
+# Segment Intersection
 
 - [Segment - Point](#segment---point)
 - [Segment - Segment](#Segment---segment)
