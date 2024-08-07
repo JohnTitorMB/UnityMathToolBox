@@ -4,7 +4,7 @@ This c# mathematical utility compiles a diverse and varied set of mathematical a
 
 # Intersection :
 - [Segment Intersection](#segment-Intersection)
-
+- [Ray Intersection](#ray-Intersection)
 
 # Segment Intersection
 
