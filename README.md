@@ -2,6 +2,9 @@
 
 This c# mathematical utility compiles a diverse and varied set of mathematical and physical functions to simplify 3D project development.
 
+#Changelog :
+- August 8th, 2024 : Add two sets of intersection : Ray and Line
+
 # Intersection :
 - [Segment Intersection](#segment-Intersection)
 - [Ray Intersection](#ray-Intersection)
