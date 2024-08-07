@@ -10,6 +10,7 @@ This c# mathematical utility compiles a diverse and varied set of mathematical a
 
 - [Segment - Point](#segment---point)
 - [Segment - Segment](#Segment---segment)
+- [Segment - Ray](#ray---segment)
 - [Segment - Plan](#Segment---plan)
 - [Segment - PlanXZ](#Segment---PlanXZ)
 - [Segment - PlanXY](#Segment---PlanXY)
