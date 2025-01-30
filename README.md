@@ -1,9 +1,26 @@
 # UnityMathToolBox
 
-This c# mathematical utility compiles a diverse and varied set of mathematical and physical functions to simplify 3D project development.
+This C# mathematical utility serves as the foundation for a series of advanced mathematical and geometric functions aimed at simplifying 3D project development in Unity.
 
-#Changelog :
-- August 8th, 2024 : Add two sets of intersection : Ray and Line
+It has since evolved into a more complete tool, **Geometry Utilities**, now available on the Unity Asset Store:  
+🔗 [Get it here](https://u3d.as/3spe)
+
+## Available Shapes
+**Geometry Utilities** supports a wide range of shapes, each with its own set of features:  
+- **Point**  
+- **Segment**  
+- **Ray**  
+- **Line**  
+- **Plane**  
+- **Quad**  
+- **Box**  
+- **Sphere**  
+- **Infinite Cylinder**  
+- **Cylinder**  
+- **Capsule**  
+
+## Changelog
+- **August 8th, 2024**: Added two sets of intersection calculations: **Ray** and **Line**.
 
 # Intersection :
 - [Segment Intersection](#segment-Intersection)
